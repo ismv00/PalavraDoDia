@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict/>
+	</array>
+    
+    <!-- Permissões de Notificações -->
+        <key>NSUserTrackingUsageDescription</key>
+        <string>Este app envia notificações diárias com versículos devocionais.</string>
+
+        <!-- API Key direto no Info.plist -->
+        <key>API_KEY</key>
+        <string>AIzaSyDE-0fE2Zi2N-G6c0ZjXz2C5ER3kGpQBdk</string>
+</dict>
+</plist>

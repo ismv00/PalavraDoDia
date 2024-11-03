@@ -6,13 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		95BE7CFC2CD5CD4600120F51 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = 95BE7CFB2CD5CD4600120F51 /* GoogleGenerativeAI */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		95BE7CE52CD5CB2F00120F51 /* PalavraDoDia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PalavraDoDia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		95BE7CF72CD5CB3A00120F51 /* Exceptions for "PalavraDoDia" folder in "PalavraDoDia" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				info.plist,
+			);
+			target = 95BE7CE42CD5CB2F00120F51 /* PalavraDoDia */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		95BE7CE72CD5CB2F00120F51 /* PalavraDoDia */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				95BE7CF72CD5CB3A00120F51 /* Exceptions for "PalavraDoDia" folder in "PalavraDoDia" target */,
+			);
 			path = PalavraDoDia;
 			sourceTree = "<group>";
 		};
@@ -23,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95BE7CFC2CD5CD4600120F51 /* GoogleGenerativeAI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +83,7 @@
 			);
 			name = PalavraDoDia;
 			packageProductDependencies = (
+				95BE7CFB2CD5CD4600120F51 /* GoogleGenerativeAI */,
 			);
 			productName = PalavraDoDia;
 			productReference = 95BE7CE52CD5CB2F00120F51 /* PalavraDoDia.app */;
@@ -94,6 +113,9 @@
 			);
 			mainGroup = 95BE7CDC2CD5CB2F00120F51;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				95BE7CFA2CD5CD4600120F51 /* XCRemoteSwiftPackageReference "generative-ai-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 95BE7CE62CD5CB2F00120F51 /* Products */;
 			projectDirPath = "";
@@ -255,6 +277,8 @@
 				DEVELOPMENT_TEAM = NQ2VNMC2GR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PalavraDoDia/Info.plist;
+				"INFOPLIST_FILE[sdk=iphone*]" = PalavraDoDia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +308,8 @@
 				DEVELOPMENT_TEAM = NQ2VNMC2GR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PalavraDoDia/Info.plist;
+				"INFOPLIST_FILE[sdk=iphonesimulator*]" = PalavraDoDia/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -324,6 +350,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		95BE7CFA2CD5CD4600120F51 /* XCRemoteSwiftPackageReference "generative-ai-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/generative-ai-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		95BE7CFB2CD5CD4600120F51 /* GoogleGenerativeAI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 95BE7CFA2CD5CD4600120F51 /* XCRemoteSwiftPackageReference "generative-ai-swift" */;
+			productName = GoogleGenerativeAI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 95BE7CDD2CD5CB2F00120F51 /* Project object */;
 }
